@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/Users/kaishin/dev/js/tdd/giftgiver'
+let g:netrw_dirhist_6='/Users/kaishin/dev/js/tdd/giftgiver/public'
+let g:netrw_dirhist_5='/Users/kaishin/dev/js/tdd/giftgiver'
+let g:netrw_dirhist_4='/Users/kaishin/dev/js/tdd/giftgiver/node_modules'
+let g:netrw_dirhist_3='/Users/kaishin/dev/js/tdd/giftgiver'
+let g:netrw_dirhist_2='/Users/kaishin/dev/js/tdd/giftgiver/src'
+let g:netrw_dirhist_1='/Users/kaishin/dev/js/tdd/giftgiver/src/components'
