@@ -5,11 +5,16 @@ set tabstop=4
 set shiftwidth=4
 set exrc " .vimrc in local project dir
 set secure
+set number " show line numbers
+set noswapfile " disable the swapfile
+set hlsearch " highlight all results
+set ignorecase " ignore case in search
+set incsearch " show search results as you type
 autocmd BufRead,BufNewFile * set signcolumn=yes
 autocmd FileType tagbar,nerdtree set signcolumn=no
 set foldmethod=indent
 set nofoldenable
-set number relativenumber
+" set number relativenumber
 "set diffopt+=vertical
 :augroup numbertoggle
 :  autocmd!
@@ -39,8 +44,16 @@ let g:gitgutter_set_sign_backgrounds = 0
 
 "-- NERDTree --
 let NERDTreeShowHidden=1
-autocmd VimEnter * NERDTree
+" autocmd VimEnter * NERDTree
 :let g:NERDTreeWinSize=60
+nmap <F6> :NERDTreeToggle<CR>
 
 "-- Airline --
 let g:airline#extensions#tabline#enabled = 1
+
+" -- FZF
+nmap <C-P> :FZF<CR>
+
+" -- Default Vim changes
+inoremap jk <ESC>
+
